@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yesteryear&display=swap');
+
+.txt-white { color: #FFF }
+.txt-red {color: red;}
+
+.container {  max-width: 1110px;  margin: auto;}
+.clearfix::after { content: ""; clear: both; display: table }
+header {
+    background: url('../img/headerbg.jpg') center/cover;
+}
+header .container { 
+    position: relative;
+    min-height: 100vh;
+}
+header nav, header section {
+    position: absolute;
+}
+header nav {
+    top: 30px;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+header nav ul li { 
+    text-align: center; 
+    padding: 0 25px;
+    font: 1em Poppins;      
+} 
+header section {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    text-align: center;
+}
+header section p {
+    font: 1.1em/1.8 Poppins;     
+}
+h1 {
+    font: 2em Poppins, sans-serif;
+    text-transform: uppercase;
+}
+h2 {
+    font: 2em Yesteryear, cursive;
+    text-align: center;
+}
+h3 {
+    font: 1em Tahoma;
+    color: #0b0c0d;
+    text-transform: uppercase;
+} 
+h3 span { float: right } 
+h4 {font: 1.5em bold Tahoma;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.fp1 {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px 0 0 0;
+   
+}
+
+hr {
+    width: 108px;
+    border: none;
+    border-bottom: 1px solid;
+}
+main section {
+    padding: 110px 0;
+}
+#story {
+    background: #962323;
+}
+#story img {
+    width: 100%;
+    height: 50vh;
+}
+#story article {
+    text-align: center;
+}
+#recipes {
+    background: url(../img/recept.jpg);
+    height: 483px;
+    
+}
+#menu {
+    background: #f3f4f7;
+}
+#menu article {
+    padding: 30px 10px;
+}
+
+.para3 {
+    text-align: left;
+    
+}
+span {
+    color: #ce3f72;
+}
+.gallery {
+    width: 100%;
+    height: 50vh;
+   
+}
+
+#f1 {
+    background: #25262a;
+    padding: 20px 0;
+}
+#f2 {
+    background: #16171b;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#f1 article {
+    text-align:center;
+    padding: 20px 0 0 0;
+    
+}
+#f2 p{
+    display: inline-block;
+    padding: 0 0 0 2px;
+    font: 0.8em Helvetica;
+    color:  #737476;
+
+    
+}
+.line {
+    padding: 0 5px 0 5px;
+}
+.icon {
+    color: #c0235a;
+    padding: 0 10px 0 0; 
+}
+
+
+@media only screen and (min-width: 768px) {
+    header nav { width: 100%; top: 65px; }
+    header nav ul {float: right; }
+    header nav ul li { display: inline-block; }
+    h1 { font-size: 4.5em }
+    h2 { font-size: 3.5em }
+    h4 { font-size: 1em}
+    .fp1 { font-size: 0.7em}
+    #story img {
+        width: 42%;
+        height: 400px;
+        float: left;
+    }
+    #story article {
+        float: left;
+        width: 50%;
+        margin: 50px 0 0 8%;
+    }
+    .cols {
+        column-count: 2;
+        column-gap: 10%;
+    }
+
+    .para2 {
+        border: #25262 2px solid;
+        margin: 0 300px 117px 300px;
+    }
+    .para3 {
+        text-align: left;
+        margin: 5px;
+    }
+
+    .gallery {
+        width: 20%;
+        height: 250px;
+        float: left;
+    }
+    
+    #f1 {
+        width: 100%;
+        padding: 80px 0 80px 240px;
+       
+    }
+    #f1 article {
+        float: left;
+        padding: 0 60px 0 0;
+        line-height: 10px;
+    }
+    #f2 {
+        padding: 40px;
+    }
+        
+
+}
